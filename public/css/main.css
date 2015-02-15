@@ -81,6 +81,9 @@ CONTENT AREA
 }
 .top >.social_media>li{
 	display: inline-block;
+	width: 32%;
+	padding: 0;
+	margin: 0;
 }
 /*Social Icon Widgets*/
 .fa {
@@ -111,10 +114,12 @@ CONTENT AREA
 }
 .nav {
 	margin-top: 1em;
+	margin-right: 1em;
 	font-size: 1.5em;
-	margin-right: 0.4em;
 }
-
+.nav-tabs>li {
+	width: 20%;
+}
 .nav-tabs>li>a {
 	color: #F4F3F5;
 	border: none;
@@ -145,6 +150,15 @@ CONTENT AREA
 }
 h1 {
 	text-shadow: 2px 2px black;
+}
+.navbar-brand {
+	/* float: left; */
+	padding: 15px 15px;
+	font-size: 18px;
+	line-height: 20px;
+	position: absolute;
+	top: -10%;
+	left: 0;
 }
 /**********************
 ABOUT US 
@@ -262,6 +276,11 @@ p.location{
 	padding: 1em;
 	border-radius: 1em;
 }
+iframe{
+	border: 0;
+	max-width: 100%;
+}
+
 
 /***********************
 Carousel Slide Show
@@ -270,11 +289,12 @@ Carousel Slide Show
 /*Image*/
 .carousel-inner>.item>img,
 .carousel-inner>.item>a>img {
-	display: block;
+/*	display: block;
 	margin: 0 auto;
-	height: 480px;
-	width: 100%;
-	line-height: 1;
+	line-height: 1;*/
+}
+.img-responsive {
+	margin: 0 auto;
 }
 .carousel-control {
 	width: 5%;
@@ -317,7 +337,7 @@ FOOTER
 #page_footer{
 	background: url("../images/skyline.jpg");
 	background-repeat: no-repeat;
-	background-size: 100% 140%;
+	background-size: 100% 100%;
 	background-position: center;
 }
 .bottom{
@@ -368,57 +388,44 @@ FOOTER
 }
 
 
+@media only screen and (max-width: 600px){
+	
+.bottom a {
+	font-size: .7em;
+}
+.footer_top > div{
+	font-size: 1.0em;
 
+}
+.aboutus,
+.statement,
+.loc_text{
+	width: 80%;
+}
+.nav {
+	font-size: 1.0em;
+	margin-right: 0;
+}
+.nav:first {
+	color: black;
+}
 
-
-
-
+}
+@media only screen and (max-width: 500px){
+	.navbar-brand {
+		display: none;
+	}
+	ul.nav-tabs{
+		width: 98%;
+	}
+}
+html, body {
+  width: auto !important;
+  overflow-x: hidden !important;
+}
 /***********************
 QUERIES
 ************************/
-
-@media(max-width: 580px){
-	nav{
-		font-size: 0.58em;
-	}
-	.navbar-brand{
-		display: none;
-		margin: 0 auto;
-	}
-	.top >.social_media>li {
-	display: block;
-	border-bottom: 1px solid grey
-	}
-	.aboutus{
-		width: 80%;
-	}
-
-
-}
-@media(max-width:767px){
-	nav {
-/*		font-size: 0.5em;*/
-	}
-	.carousel-control{
-		font-size: 3em;
-	}
-	a.navbar-brand{
-		display: block;	
-		margin:;
-	}
-}
-@media(min-width:768px){
-
-}
-@media(min-width:992px){
-/*	.carousel-caption{
-		font-size: 2.0em;
-	}*/
-}
-@media(min-width:1200px){
-
-}
-
 
 
 
