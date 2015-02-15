@@ -1,0 +1,427 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/***********************************************
+MAINSTYLES
+************************************************/
+/*Main Colors:
+Monarchs Blue : #02253E;
+Monarchs Gold : #BE9100;
+Monarchs LightGold :#C0A101;
+Monarchs White; #F4F3F5;
+
+Main Fonts 
+font-family: 'Oswald', sans-serif; ;
+font-family: 'Vollkorn', serif; 
+*/
+
+/***********************
+CONTENT AREA
+***********************/
+.container{
+	padding: 0;
+}
+.content {
+	width: 100%;
+}
+.top {
+	min-height: 50px;
+	background-color: white;
+}
+.top> .social_media {
+	font-style: 2em;
+	text-align: center;
+}
+.top >.social_media>li{
+	display: inline-block;
+}
+/*Social Icon Widgets*/
+.fa {
+	font-size: 3em;
+	padding: 0.2em;
+	margin: 0 0.8em;
+	color: #02253E;
+}
+
+/********/
+.blue {
+	background-color: #02253E !important;
+}
+.blue .nav-tabs>li.active>a{
+	color: white;
+}
+.blue .nav-tabs>li>a:hover{
+	background-color: #BE9100;
+}
+
+.navbar {
+	background-color: #BE9100;
+	font-family: 'Oswald', sans-serif;
+}
+.nav-tabs{
+	float: right;
+	border-bottom: 1px solid #C0A101;
+}
+.nav {
+	margin-top: 1em;
+	font-size: 1.5em;
+	margin-right: 0.4em;
+}
+
+.nav-tabs>li>a {
+	color: #F4F3F5;
+	border: none;
+	border-radius: 4px;
+	margin-right: 0px;
+}
+.nav-tabs>li.active>a{
+	color: #02253E;
+	background-color: transparent;
+	border:1px solid transparent;
+}
+.nav-tabs>li>a:hover {
+	background-color: #02253E;
+}
+.navbar {
+	margin-bottom: 0px;
+}
+.navbar-brand img {
+	background-color: white;
+	/* border: 1px solid blue; */
+	/* border-radius: 2em; */
+	padding: -0.6em;
+	padding: 0.1em;
+	border-radius: 1em;
+}
+.navbar-default{
+	border: none;
+}
+h1 {
+	text-shadow: 2px 2px black;
+}
+/**********************
+ABOUT US 
+***********************/
+#about{
+	background-color: #02253E;
+	color: white;
+}
+.aboutus {
+	width: 50%;
+	margin: 0 auto;
+	font-family: 'Vollkorn', serif; 
+	font-size: 1.5em;
+	line-height: 1.1em;
+	margin-bottom: 3em;
+}
+.aboutus>h1{
+	text-align: center;
+	font-family: 'Oswald', sans-serif;
+	margin: 1em 0 0 0;
+	font-size: 2.32em;
+	color: #BE9100;
+	border-bottom: 1px solid rgba(244,243,245, 0.5);
+	padding-bottom: 0.4em;
+}
+
+
+/**********************
+Mission
+***********************/
+#mission{
+	width: 100%;
+	margin: 0 auto;
+	background-color: #D3BD6F;
+	border-bottom: 1px solid #02253E;
+}
+.statement{
+	width: 50%;
+	margin: 0 auto;
+	font-family: 'Vollkorn', serif; 
+	font-size: 1.5em;
+	line-height: 1.1em;
+	margin-bottom: 3em;
+}
+.statement>h1{
+	text-align: center;
+	font-family: 'Oswald', sans-serif;
+	margin: 1em 0 1em 0;
+	font-size: 2.32em;
+	color: white;
+	padding-bottom: 0.4em;
+	border-bottom: 1px solid #02253E;
+}
+#donate{
+	text-align: center;
+}
+.donate_button{
+	padding:1em;
+	background-color: white;
+	border: none;
+	color: blue;
+	font-size: 2em;
+	margin-bottom: 2em;
+	font-family: 'Oswald', sans-serif;
+	border: 1px solid red;
+	box-shadow: 1px 2px 1px 2px black;
+	display: inline;
+	position: absolute;
+	z-index: 100000;
+	left: 10000;
+	margin: 0 auto;
+	text-align: center;
+	left: 84%;
+}
+
+
+
+/**********************
+LOCATION
+***********************/
+#location{
+	width: 100%;
+	margin: 0 auto;
+	font-size: 1.5em;
+	font-family: sans-serif;
+	background-color: #BE9100;
+	color: white;
+	border-bottom: 1px solid #02253E;
+}
+
+.loc_text{
+	font-family: 'Vollkorn', serif;
+	width: 50%;
+	margin: 0 auto;
+}
+.loc_text > h1 {
+	font-family: 'Oswald', sans-serif;
+	margin-top: 0.8em;
+	color: #02253E;
+	text-align: center;
+	font-size: 2em;
+	border-bottom: 1px solid rgba(244,243,245, 0.5);
+	padding-bottom: 0.4em;
+}
+p.location{
+	margin: 1em auto;
+}
+.map {
+	text-align: center;
+	margin-bottom: 2em;	
+}
+.border {
+	background-color: #02253E;
+	display: inline-block;
+	padding: 1em;
+	border-radius: 1em;
+}
+
+/***********************
+Carousel Slide Show
+************************/
+
+/*Image*/
+.carousel-inner>.item>img,
+.carousel-inner>.item>a>img {
+	display: block;
+	margin: 0 auto;
+	height: 480px;
+	width: 100%;
+	line-height: 1;
+}
+.carousel-control {
+	width: 5%;
+	font-size: 7em;
+	color: #02253E;
+	opacity: 1.0;
+}
+
+.carousel-caption {
+	font-family:'Vollkorn', serif; 
+	position: absolute;
+	right: 15%;
+	font-size: 2.0em;
+	bottom: 20px;
+	left: 15%;
+	z-index: 10;
+	padding-top: 20px;
+	padding-bottom: 3em;
+	color: #fff;
+	text-align: center;
+	text-shadow: 0 1px 2px rgba(0,0,0,0.6);
+}
+.normal{
+	background-color: rgba(2,37,62,0.6);
+	border-radius: 0.5em;
+	padding: 1em 0;
+	font-size: 1.2em;
+	text-shadow: 3px 5px 1px black;
+}
+.long{
+	margin-bottom:;
+	padding:;
+	line-height:;
+	background-color: rgba(2,37,62,0.4);
+}
+
+/***********************
+FOOTER
+************************/
+#page_footer{
+	background: url("../images/skyline.jpg");
+	background-repeat: no-repeat;
+	background-size: 100% 140%;
+	background-position: center;
+}
+.bottom{
+	color: white;
+	font-size: 1.0em;
+	padding: 0 1.5em;
+	padding-bottom: 2.0em;
+}
+
+.bottom a {
+	display: inline-block;
+	width: 19%;
+	font-size: 1.4em;
+	text-transform: uppercase;
+	font-family: 'Oswald', sans-serif; 
+	line-height: 1.2em;
+	text-decoration: none;
+	text-align: center;
+	background-color: rgba(2,37,62,0.7);
+	padding: 2em 0;
+	color: white;
+}
+.bottom a:hover{
+	background-color: rgba(2,37,62,0.3);
+	transition-duration:1s;
+	letter-spacing: 2px;
+}
+.footer_top > div{
+	display: inline-block;
+	width: 48%;
+	background-color: rgba(190,145,0, 0.7);
+	font-size: 1.4em;
+	text-transform: uppercase;
+	font-family: 'Oswald', sans-serif; 
+	line-height: 1.2em;
+	text-decoration: none;
+	text-align: center;
+	padding: 2em 0;
+}
+.footer_top > div:hover {
+	background-color: rgba(190,145,0,0.3);
+	transition-duration:1s;
+	letter-spacing: 2px;
+}
+.footer_top{
+	padding-top: 3em;
+	text-align: center;
+}
+
+
+
+
+
+
+
+/***********************
+QUERIES
+************************/
+
+@media(max-width: 580px){
+	nav{
+		font-size: 0.58em;
+	}
+	.navbar-brand{
+		display: none;
+		margin: 0 auto;
+	}
+	.top >.social_media>li {
+	display: block;
+	border-bottom: 1px solid grey
+	}
+	.aboutus{
+		width: 80%;
+	}
+
+
+}
+@media(max-width:767px){
+	nav {
+/*		font-size: 0.5em;*/
+	}
+	.carousel-control{
+		font-size: 3em;
+	}
+	a.navbar-brand{
+		display: block;	
+		margin:;
+	}
+}
+@media(min-width:768px){
+
+}
+@media(min-width:992px){
+/*	.carousel-caption{
+		font-size: 2.0em;
+	}*/
+}
+@media(min-width:1200px){
+
+}
+
+
+
+
+
+
+
