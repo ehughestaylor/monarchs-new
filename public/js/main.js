@@ -4,6 +4,14 @@ function carousel(){
     })
    };
 
+$('.social_media li').on('mouseenter', function(){
+	var animationName = "animated shake";
+	var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
+	$(this).addClass(animationName).one(animationEnd, function(){
+		$(this).removeClass(animationName);
+	});
+})
+
 
 $(document).ready(function(){
 	carousel();

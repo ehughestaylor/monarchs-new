@@ -49,19 +49,15 @@ table {
 
 
 /***********************************************
-MAINSTYLES
+Variables
 ************************************************/
-/*Main Colors:
-Monarchs Blue : #02253E;
-Monarchs Gold : #BE9100;
-Monarchs LightGold :#C0A101;
-Monarchs White; #F4F3F5;
+$monarch-blue: #02253E;
+$monarch-gold: #BE9100;
+$monarch-lighgold: #C0A101;
+$white: #F4F3F5;
 
-Main Fonts 
-font-family: 'Oswald', sans-serif; ;
-font-family: 'Vollkorn', serif; 
-*/
-
+$main-font: 'Oswald', sans-serif;
+$second-font: 'Vollkorn',serif;
 /***********************
 CONTENT AREA
 ***********************/
@@ -90,23 +86,23 @@ CONTENT AREA
 	font-size: 3em;
 	padding: 0.2em;
 	margin: 0 0.8em;
-	color: #02253E;
+	color: $monarch-blue;
 }
 
 /********/
 .blue {
-	background-color: #02253E !important;
+	background-color: $monarch-blue !important;
 }
 .blue .nav-tabs>li.active>a{
 	color: white;
 }
 .blue .nav-tabs>li>a:hover{
-	background-color: #BE9100;
+	background-color: $monarch-gold;
 }
 
 .navbar {
-	background-color: #BE9100;
-	font-family: 'Oswald', sans-serif;
+	background-color: $monarch-gold;
+	font-family: $main-font;
 }
 .nav-tabs{
 	float: right;
@@ -121,18 +117,18 @@ CONTENT AREA
 	width: 20%;
 }
 .nav-tabs>li>a {
-	color: #F4F3F5;
+	color: $white;
 	border: none;
 	border-radius: 4px;
 	margin-right: 0px;
 }
 .nav-tabs>li.active>a{
-	color: #02253E;
+	color: $monarch-blue;
 	background-color: transparent;
 	border:1px solid transparent;
 }
 .nav-tabs>li>a:hover {
-	background-color: #02253E;
+	background-color: $monarch-blue;
 }
 .navbar {
 	margin-bottom: 0px;
@@ -164,20 +160,20 @@ h1 {
 ABOUT US 
 ***********************/
 #about{
-	background-color: #02253E;
-	color: white;
+	background-color: $monarch-blue;
+	color: $white;
 }
 .aboutus {
 	width: 50%;
 	margin: 0 auto;
-	font-family: 'Vollkorn', serif; 
+	font-family: $second-font;
 	font-size: 1.5em;
 	line-height: 1.1em;
 	margin-bottom: 3em;
 }
 .aboutus>h1{
 	text-align: center;
-	font-family: 'Oswald', sans-serif;
+	font-family: $main-font;
 	margin: 1em 0 0 0;
 	font-size: 2.32em;
 	color: #BE9100;
@@ -198,7 +194,7 @@ Mission
 .statement{
 	width: 50%;
 	margin: 0 auto;
-	font-family: 'Vollkorn', serif; 
+	font-family: $second-font;
 	font-size: 1.5em;
 	line-height: 1.1em;
 	margin-bottom: 3em;
@@ -217,23 +213,19 @@ Mission
 }
 .donate_button{
 	padding:1em;
-	background-color: white;
+	background-color: $monarch-gold;
 	border: none;
-	color: blue;
-	font-size: 2em;
+	color: $monarch-blue;
+	font-size: 1.6em;
 	margin-bottom: 2em;
 	font-family: 'Oswald', sans-serif;
-	border: 1px solid red;
-	box-shadow: 1px 2px 1px 2px black;
 	display: inline;
 	position: absolute;
 	z-index: 100000;
-	left: 10000;
+	right: 0;
 	margin: 0 auto;
 	text-align: center;
-	left: 84%;
 }
-
 
 
 /**********************
@@ -243,21 +235,21 @@ LOCATION
 	width: 100%;
 	margin: 0 auto;
 	font-size: 1.5em;
-	font-family: sans-serif;
-	background-color: #BE9100;
+	font-family: $main-font;
+	background-color: $monarch-gold;
 	color: white;
-	border-bottom: 1px solid #02253E;
+	border-bottom: 1px solid $monarch-blue;
 }
 
 .loc_text{
-	font-family: 'Vollkorn', serif;
+	font-family: $second-font;
 	width: 50%;
 	margin: 0 auto;
 }
 .loc_text > h1 {
 	font-family: 'Oswald', sans-serif;
 	margin-top: 0.8em;
-	color: #02253E;
+	color: $monarch-blue;
 	text-align: center;
 	font-size: 2em;
 	border-bottom: 1px solid rgba(244,243,245, 0.5);
@@ -271,7 +263,7 @@ p.location{
 	margin-bottom: 2em;	
 }
 .border {
-	background-color: #02253E;
+	background-color: $monarch-blue;
 	display: inline-block;
 	padding: 1em;
 	border-radius: 1em;
@@ -299,12 +291,12 @@ Carousel Slide Show
 .carousel-control {
 	width: 5%;
 	font-size: 7em;
-	color: #02253E;
+	color: $monarch-blue;
 	opacity: 1.0;
 }
 
 .carousel-caption {
-	font-family:'Vollkorn', serif; 
+	font-family:$second-font;
 	position: absolute;
 	right: 15%;
 	font-size: 2.0em;
@@ -325,9 +317,6 @@ Carousel Slide Show
 	text-shadow: 3px 5px 1px black;
 }
 .long{
-	margin-bottom:;
-	padding:;
-	line-height:;
 	background-color: rgba(2,37,62,0.4);
 }
 
@@ -418,17 +407,9 @@ FOOTER
 	ul.nav-tabs{
 		width: 98%;
 	}
+	.donate_button {font-size: 1em;}
 }
 html, body {
   width: auto !important;
   overflow-x: hidden !important;
 }
-/***********************
-QUERIES
-************************/
-
-
-
-
-
-
