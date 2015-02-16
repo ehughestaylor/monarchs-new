@@ -407,7 +407,12 @@ FOOTER
 	ul.nav-tabs{
 		width: 98%;
 	}
-	.donate_button {font-size: 1em;}
+	.donate_button {
+		font-size: 1em;
+	}
+	.carousel-control {
+		font-size: 2.5em;
+	}
 }
 html, body {
   width: auto !important;

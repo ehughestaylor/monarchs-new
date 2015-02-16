@@ -378,7 +378,10 @@ FOOTER
     width: 98%; }
 
   .donate_button {
-    font-size: 1em; } }
+    font-size: 1em; }
+
+  .carousel-control {
+    font-size: 2.5em; } }
 html, body {
   width: auto !important;
   overflow-x: hidden !important; }
