@@ -259,6 +259,9 @@ iframe {
 Carousel Slide Show
 ************************/
 /*Image*/
+.carousel-inner {
+  background-color: #BE9100; }
+
 .carousel-inner > .item > img,
 .carousel-inner > .item > a > img {
   /*	display: block;
@@ -312,6 +315,14 @@ FOOTER
   font-size: 1.0em;
   padding: 0 1.5em;
   padding-bottom: 2.0em; }
+
+div.face,
+div.tweet {
+  cursor: pointer; }
+  div.face a,
+  div.tweet a {
+    text-decoration: none;
+    color: #02253E; }
 
 .bottom a {
   display: inline-block;

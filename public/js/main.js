@@ -11,6 +11,13 @@ $('.social_media li').on('mouseenter', function(){
 		$(this).removeClass(animationName);
 	});
 })
+$('.donate_button').on('mouseenter', function(){
+	var animationName = "animated tada";
+	var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
+	$(this).addClass(animationName).one(animationEnd, function(){
+		$(this).removeClass(animationName);
+	});
+})
 
 
 $(document).ready(function(){
