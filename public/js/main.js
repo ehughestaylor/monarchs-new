@@ -19,6 +19,21 @@ $('.donate_button').on('mouseenter', function(){
 	});
 })
 
+$("#about_but").click(function() {
+    $('html, body').animate({
+        scrollTop: $(".social_media").offset().top
+    }, 2000);
+});
+$("#mission_but").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#mission").offset().top
+    }, 2000);
+});
+$("#contact_but").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#location").offset().top
+    }, 2000);
+});
 
 $(document).ready(function(){
 	carousel();
