@@ -133,7 +133,7 @@ CONTENT AREA
   border: none; }
 
 h1 {
-  text-shadow: 2px 2px black; }
+  text-shadow: 1px 1px black; }
 
 .navbar-brand {
   /* float: left; */
@@ -243,13 +243,25 @@ p.location {
 
 .map {
   text-align: center;
-  margin-bottom: 2em; }
-
-.border {
-  background-color: #02253E;
-  display: inline-block;
-  padding: 1em;
-  border-radius: 1em; }
+  width: 100%;
+  margin: 2em auto; }
+  .map .border {
+    background-color: #02253E;
+    display: inline-block;
+    padding: 1em;
+    border-radius: 1em;
+    height: 300px;
+    width: 300px;
+    display: inline-block; }
+  .map .contact {
+    width: 30%;
+    display: inline-block;
+    vertical-align: top; }
+    .map .contact h2 {
+      margin-bottom: 0.4em;
+      color: #02253E; }
+    .map .contact a {
+      text-decoration: none; }
 
 iframe {
   border: 0;
@@ -260,16 +272,18 @@ Carousel Slide Show
 ************************/
 /*Image*/
 .carousel-inner {
-  background-color: #BE9100; }
+  background-color: #02253E; }
 
 .carousel-inner > .item > img,
 .carousel-inner > .item > a > img {
-  /*	display: block;
-  	margin: 0 auto;
-  	line-height: 1;*/ }
+  vertical-align: middle;
+  min-height: 300px; }
 
 .img-responsive {
   margin: 0 auto; }
+
+.carousel-inner {
+  max-height: 500px; }
 
 .carousel-control {
   width: 5%;
@@ -278,18 +292,20 @@ Carousel Slide Show
   opacity: 1.0; }
 
 .carousel-caption {
-  font-family: "Vollkorn", serif;
+  font-family: "Oswald", sans-serif;
   position: absolute;
   right: 15%;
   font-size: 2.0em;
   bottom: 20px;
-  left: 15%;
   z-index: 10;
-  padding-top: 20px;
-  padding-bottom: 3em;
   color: #fff;
   text-align: center;
+  top: 25%;
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6); }
+  .carousel-caption h1 {
+    background-color: #BE9100;
+    opacity: 0.8;
+    padding: 1em 0.5em; }
 
 .normal {
   background-color: rgba(2, 37, 62, 0.6);
@@ -327,7 +343,7 @@ div.tweet {
 .bottom a {
   display: inline-block;
   width: 19%;
-  font-size: 1.4em;
+  font-size: 1.0em;
   text-transform: uppercase;
   font-family: 'Oswald', sans-serif;
   line-height: 1.2em;
@@ -346,7 +362,7 @@ div.tweet {
   display: inline-block;
   width: 48%;
   background-color: rgba(190, 145, 0, 0.7);
-  font-size: 1.4em;
+  font-size: 1.0em;
   text-transform: uppercase;
   font-family: 'Oswald', sans-serif;
   line-height: 1.2em;
@@ -368,7 +384,7 @@ div.tweet {
     font-size: .7em; }
 
   .footer_top > div {
-    font-size: 1.0em; }
+    font-size: 0.6em; }
 
   .aboutus,
   .statement,
