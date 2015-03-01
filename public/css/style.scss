@@ -81,12 +81,48 @@ CONTENT AREA
 	padding: 0;
 	margin: 0;
 }
+a.barnstorm{
+	background-color: #BE9100;
+	opacity: 0.94;
+	color: $monarch-blue;
+	position: fixed;
+	left: 4%;
+	width: 300px;
+	padding: 1em 0.5em;
+	text-decoration: none;
+	text-shadow:none;
+}
+a.barnstorm:hover{
+	background-color: $monarch-blue;
+	color: $white;
+	transition-duration:.4s;
+}
+
+@media only screen and (max-width: 600px){
+	a.barnstorm{
+		font-size: 0.6em;
+		width: 200px;
+	}
+}
+
 /*Social Icon Widgets*/
 .fa {
 	font-size: 3em;
 	padding: 0.2em;
 	margin: 0 0.8em;
 	color: $monarch-blue;
+}
+
+#to-top{
+	height: 100px;
+	width: 100px;
+	position: fixed;
+	right: 0;
+	top: 0;
+	padding-top: 2em;
+	z-index: 1000;
+	-webkit-backface-visibility: hidden; 
+	-webkit-transform: translateZ(0);
 }
 
 /********/
@@ -144,7 +180,8 @@ CONTENT AREA
 .navbar-default{
 	border: none;
 }
-h1 {
+h1,
+h2 {
 	text-shadow: 1px 1px black;
 }
 .navbar-brand {
@@ -159,20 +196,33 @@ h1 {
 /**********************
 ABOUT US 
 ***********************/
-#about{
+#about,
+#movement{
 	background-color: $monarch-blue;
 	color: $white;
 }
-.aboutus {
-	width: 50%;
+#movement{
+	padding-top: 1em;
+}
+.aboutus,
+.statement {
+	width: 60%;
 	margin: 0 auto;
 	font-family: $second-font;
 	font-size: 1.5em;
 	line-height: 1.1em;
-	margin-bottom: 3em;
+	margin-bottom: 0em;
+	padding-bottom: 2em;
+	img{
+		padding: 1em 0;
+	}
 }
-.aboutus>h1{
+.aboutus>h1,
+.aboutus>h2,
+.civil>h1,
+.civil>h2{
 	text-align: center;
+	line-height: 1.0em;
 	font-family: $main-font;
 	margin: 1em 0 0 0;
 	font-size: 2.32em;
@@ -190,16 +240,24 @@ Mission
 	margin: 0 auto;
 	background-color: #D3BD6F;
 	border-bottom: 1px solid #02253E;
+	img{
+		padding: 1em 0;
+	}
 }
 .statement{
-	width: 50%;
+	width: 60%;
 	margin: 0 auto;
 	font-family: $second-font;
 	font-size: 1.5em;
 	line-height: 1.1em;
-	margin-bottom: 3em;
+	margin-bottom: 0em;
+	img{
+		padding: 1em 0;
+	}
 }
-.statement>h1{
+.statement>h1,
+.statement>h2{
+	line-height: 1.0em;
 	text-align: center;
 	font-family: 'Oswald', sans-serif;
 	margin: 1em 0 1em 0;
@@ -243,7 +301,7 @@ LOCATION
 
 .loc_text{
 	font-family: $second-font;
-	width: 50%;
+	width: 60%;
 	margin: 0 auto;
 }
 .loc_text > h1 {
