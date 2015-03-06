@@ -35,14 +35,6 @@ $("#contact_but").click(function() {
     }, 2000);
 });
 
-$(window).scroll(function(){
-      if ($(this).scrollTop() > 135) {
-          $('.navbar-brand').addClass('fixed');
-      } else {
-          $('.navbar-brand').removeClass('fixed');
-      }
-  });
-
 $(document).ready(function(){
 	carousel();
 	$('#carousel-example-generic').on('slide.bs.carousel', function () {
