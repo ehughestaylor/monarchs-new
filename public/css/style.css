@@ -51,6 +51,9 @@ Variables
 /***********************
 CONTENT AREA
 ***********************/
+html {
+  background-color: #02253E !important; }
+
 .container {
   padding: 0; }
 
@@ -270,7 +273,8 @@ Mission
   z-index: 100000;
   right: 0;
   margin: 0 auto;
-  text-align: center; }
+  text-align: center;
+  display: none; }
 
 /**********************
 LOCATION

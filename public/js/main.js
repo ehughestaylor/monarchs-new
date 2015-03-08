@@ -34,11 +34,12 @@ function loopColor(){
 	}
 }
 
-$(document).ready(function(){
-	$(window).load(function() {
+$(window).load(function() {
 		// Animate loader off screen
-		$(".se-pre-con").fadeOut("slow");;
-	});
+		$(".se-pre-con").fadeOut("slow");
+		$(".donate_button").fadeIn("slow");
+});
+$(document).ready(function(){
 	carousel();
 	loopColor();
 	var count= 0;
