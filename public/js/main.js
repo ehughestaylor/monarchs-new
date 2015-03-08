@@ -4,13 +4,6 @@ function carousel(){
     })
    };
 
-$('.social_media li').on('mouseenter', function(){
-	var animationName = "animated shake";
-	var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
-	$(this).addClass(animationName).one(animationEnd, function(){
-		$(this).removeClass(animationName);
-	});
-})
 $('.donate_button').on('mouseenter', function(){
 	var animationName = "animated tada";
 	var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
@@ -35,19 +28,34 @@ $("#contact_but").click(function() {
     }, 2000);
 });
 
+function loopColor(){
+	for (var counter = 0; counter < 4; counter++) {
+
+	}
+}
+
 $(document).ready(function(){
 	carousel();
+	loopColor();
+	var count= 0;
 	$('#carousel-example-generic').on('slide.bs.carousel', function () {
   		// $('nav').addClass('animated slideInLeft');
-  		var animationName = 'animated bounceInRight';
-		var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend'
-		$('.nav').addClass(animationName).one(animationEnd, function(){
-			$(this).removeClass(animationName);	
-		});
-  		$('nav').toggleClass('blue');
+  		count++;
+  		console.log(count);
+  		if (count < 3) {
+  			var animationName = 'animated bounceInRight';
+			var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend'
+			$('.nav').addClass(animationName).one(animationEnd, function(){
+				$(this).removeClass(animationName);	
+			});
+	  		$('nav').toggleClass('blue');
+  		};
 	});
+
 	$('.fa').on('click',function(){
 		var animationName = 'animated shake'
 		$(this).addClass(animationName);
-	})
+	});
+
+
 });

@@ -61,22 +61,12 @@ CONTENT AREA
   min-height: 50px;
   background-color: white; }
 
-.top > .social_media {
-  font-style: 2em;
-  text-align: center; }
-
-.top > .social_media > li {
-  display: inline-block;
-  width: 32%;
-  padding: 0;
-  margin: 0; }
-
 a.barnstorm {
   background-color: #BE9100;
   opacity: 0.94;
   color: #02253E;
-  position: fixed;
-  left: 4%;
+  position: absolute;
+  left: -14%;
   width: 300px;
   padding: 1em 0.5em;
   text-decoration: none;
@@ -90,23 +80,29 @@ a.barnstorm:hover {
 @media only screen and (max-width: 600px) {
   a.barnstorm {
     display: none; } }
-/*Social Icon Widgets*/
+/******************
+Social Icon Widgets
+****************/
 .fa {
   font-size: 3em;
   padding: 0.2em;
   margin: 0 0.8em;
-  color: #02253E; }
+  color: #02253E;
+  cursor: pointer; }
 
-#to-top {
-  height: 100px;
-  width: 100px;
-  position: fixed;
-  right: 0;
-  top: 0;
-  padding-top: 2em;
-  z-index: 1000;
-  -webkit-backface-visibility: hidden;
-  -webkit-transform: translateZ(0); }
+.fa:hover {
+  color: #BE9100;
+  transition-duration: .4s; }
+
+.top > .social_media {
+  font-style: 2em;
+  text-align: center; }
+
+.top > .social_media > li {
+  display: inline-block;
+  width: 32%;
+  padding: 0;
+  margin: 0; }
 
 /********/
 .blue {
@@ -130,9 +126,6 @@ a.barnstorm:hover {
   margin-top: 1em;
   margin-right: 1em;
   font-size: 1.5em; }
-
-.nav-tabs > li {
-  width: 20%; }
 
 .nav-tabs > li > a {
   color: #F4F3F5;
@@ -175,6 +168,21 @@ h2 {
   top: -10%;
   left: 0; }
 
+.nav-tabs .dropdown-menu {
+  background-color: #02253E; }
+
+.nav-tabs > li > a:focus {
+  background-color: #02253E; }
+
+.nav .open > a, .nav .open > a:hover, .nav .open > a:focus {
+  background-color: #02253E; }
+
+.dropdown-menu li {
+  background-color: #02253E; }
+  .dropdown-menu li a {
+    font-size: 1.8em;
+    color: white; }
+
 /**********************
 ABOUT US 
 ***********************/
@@ -187,7 +195,8 @@ ABOUT US
   padding-top: 1em; }
 
 .aboutus,
-.statement {
+.statement,
+.route {
   width: 60%;
   margin: 0 auto;
   font-family: "Vollkorn", serif;
@@ -196,7 +205,8 @@ ABOUT US
   margin-bottom: 0em;
   padding-bottom: 2em; }
   .aboutus img,
-  .statement img {
+  .statement img,
+  .route img {
     padding: 1em 0; }
 
 .aboutus > h1,
@@ -256,7 +266,7 @@ Mission
   margin-bottom: 2em;
   font-family: 'Oswald', sans-serif;
   display: inline;
-  position: absolute;
+  position: fixed;
   z-index: 100000;
   right: 0;
   margin: 0 auto;
@@ -311,7 +321,8 @@ p.location {
       margin-bottom: 0.4em;
       color: #02253E; }
     .map .contact a {
-      text-decoration: none; }
+      text-decoration: none;
+      color: white; }
 
 iframe {
   border: 0;

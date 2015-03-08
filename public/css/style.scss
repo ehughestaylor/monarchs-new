@@ -71,22 +71,13 @@ CONTENT AREA
 	min-height: 50px;
 	background-color: white;
 }
-.top> .social_media {
-	font-style: 2em;
-	text-align: center;
-}
-.top >.social_media>li{
-	display: inline-block;
-	width: 32%;
-	padding: 0;
-	margin: 0;
-}
+
 a.barnstorm{
 	background-color: #BE9100;
 	opacity: 0.94;
 	color: $monarch-blue;
-	position: fixed;
-	left: 4%;
+	position: absolute;
+	left: -14%;
 	width: 300px;
 	padding: 1em 0.5em;
 	text-decoration: none;
@@ -104,25 +95,33 @@ a.barnstorm:hover{
 	}
 }
 
-/*Social Icon Widgets*/
+/******************
+Social Icon Widgets
+****************/
 .fa {
 	font-size: 3em;
 	padding: 0.2em;
 	margin: 0 0.8em;
 	color: $monarch-blue;
+	cursor: pointer;
 }
+.fa:hover{
+	color: $monarch-gold;
+	transition-duration: .4s;
+}
+.top> .social_media {
+	font-style: 2em;
+	text-align: center;
+}
+.top >.social_media>li{
+	display: inline-block;
+	width: 32%;
+	padding: 0;
+	margin: 0;
+}
+ 
 
-#to-top{
-	height: 100px;
-	width: 100px;
-	position: fixed;
-	right: 0;
-	top: 0;
-	padding-top: 2em;
-	z-index: 1000;
-	-webkit-backface-visibility: hidden; 
-	-webkit-transform: translateZ(0);
-}
+
 
 /********/
 .blue {
@@ -148,9 +147,7 @@ a.barnstorm:hover{
 	margin-right: 1em;
 	font-size: 1.5em;
 }
-.nav-tabs>li {
-	width: 20%;
-}
+
 .nav-tabs>li>a {
 	color: $white;
 	border: none;
@@ -192,6 +189,29 @@ h2 {
 	top: -10%;
 	left: 0;
 }
+
+.nav-tabs .dropdown-menu{
+	background-color: $monarch-blue;
+}
+
+.nav-tabs > li > a:focus{
+	background-color: $monarch-blue;
+}
+
+.nav .open>a, .nav .open>a:hover, .nav .open>a:focus{
+	background-color: $monarch-blue;
+}
+
+.dropdown-menu{
+	li{
+		background-color: $monarch-blue;
+		a{
+			font-size: 1.8em;
+			color: white;
+		}
+	}
+}
+
 /**********************
 ABOUT US 
 ***********************/
@@ -204,7 +224,8 @@ ABOUT US
 	padding-top: 1em;
 }
 .aboutus,
-.statement {
+.statement,
+.route{
 	width: 60%;
 	margin: 0 auto;
 	font-family: $second-font;
@@ -277,7 +298,7 @@ Mission
 	margin-bottom: 2em;
 	font-family: 'Oswald', sans-serif;
 	display: inline;
-	position: absolute;
+	position: fixed;
 	z-index: 100000;
 	right: 0;
 	margin: 0 auto;
@@ -340,6 +361,7 @@ p.location{
 		}
 		a {
 			text-decoration: none;
+			color: white;
 		}
 	}
 }

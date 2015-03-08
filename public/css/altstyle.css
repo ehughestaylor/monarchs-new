@@ -46,6 +46,23 @@ li.current {
 /*************
 TOUR PACKET
 **************/
+#route-packet {
+  width: 100%;
+  background-color: #F4F3F5;
+  border-bottom: 1px solid #02253E; }
+  #route-packet .aboutus tbody {
+    color: #02253E;
+    border-collapse: separate;
+    border-spacing: 0 50px;
+    text-align: center; }
+    #route-packet .aboutus tbody tr {
+      height: 50px; }
+      #route-packet .aboutus tbody tr td {
+        vertical-align: middle; }
+
+.route {
+  background-color: #F4F3F5; }
+
 #tour-packet {
   height: 200px;
   width: 200px;
@@ -70,6 +87,7 @@ div.players {
   width: 76%;
   background-color: red;
   overflow-y: scroll;
+  overflow-x: hidden;
   margin-left: auto;
   margin-right: auto;
   left: 0;
