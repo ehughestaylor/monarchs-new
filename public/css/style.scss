@@ -206,6 +206,7 @@ h2 {
 }
 
 .dropdown-menu{
+	background-color: $monarch-blue;
 	li{
 		background-color: $monarch-blue;
 		a{
@@ -306,7 +307,6 @@ Mission
 	right: 0;
 	margin: 0 auto;
 	text-align: center;
-	display: none;
 }
 
 
@@ -529,6 +529,11 @@ div.tweet {
 	ul.nav-tabs{
 		width: 98%;
 	}
+	.nav>li>a {
+	  padding: 10px 7.0px;
+	  margin-left: 11px;
+
+	}
 	.donate_button {
 		font-size: 1em;
 	}
@@ -540,3 +545,5 @@ html, body {
   width: auto !important;
   overflow-x: hidden !important;
 }
+
+

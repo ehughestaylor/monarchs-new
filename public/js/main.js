@@ -37,11 +37,12 @@ function loopColor(){
 $(window).load(function() {
 		// Animate loader off screen
 		$(".se-pre-con").fadeOut("slow");
-		$(".donate_button").fadeIn("slow");
+		$(".donate_button").show("slow");
 });
 $(document).ready(function(){
 	carousel();
 	loopColor();
+	$('.donate_button').hide();
 	var count= 0;
 	$('#carousel-example-generic').on('slide.bs.carousel', function () {
   		// $('nav').addClass('animated slideInLeft');

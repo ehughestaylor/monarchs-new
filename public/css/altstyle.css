@@ -1,18 +1,6 @@
 /************
 NAVIGATION
 *************/
-.brand {
-  width: 50px; }
-
-.navbar-brand {
-  /* float: left; */
-  padding: 15px 15px;
-  font-size: 18px;
-  line-height: 20px;
-  position: absolute;
-  top: -10%;
-  left: 5%; }
-
 .navbar-default .navbar-nav > li > a {
   color: white; }
 
@@ -99,7 +87,7 @@ div.players {
 
 div.player {
   background-color: #02253E;
-  margin: 2em;
+  margin: 1em;
   vertical-align: middle;
   min-height: 200px;
   min-width: 200px; }
@@ -111,6 +99,10 @@ div.player > img {
   position: absolute;
   top: 0;
   right: 0; }
+
+.row {
+  margin-right: 0px;
+  margin-left: 32px; }
 
 .full {
   height: 500px;
@@ -129,6 +121,50 @@ div.player > img {
   top: 0;
   right: 0; }
 
+/*****************
+TEAM PAGES
+******************/
+#team ul.nav {
+  bottom: 20px;
+  border-bottom: none;
+  right: 0;
+  font-size: 1.5em; }
+#team .navbar-brand {
+  padding-left: 1em;
+  padding-top: 1em;
+  background-color: white; }
+
+.navbar {
+  margin-bottom: 0px; }
+
+.team {
+  width: 100%;
+  background-color: #F4F3F5;
+  padding-top: 1.3em; }
+  .team h1 {
+    font-family: 'Oswald', sans-serif;
+    color: #02253E;
+    text-align: center;
+    font-size: 2em;
+    padding-bottom: 0.4em; }
+  .team .container {
+    width: 100%; }
+  .team .about-team {
+    padding-top: 2em;
+    background-color: #C0A101;
+    padding-bottom: 2em; }
+    .team .about-team .text {
+      font-family: "Vollkorn", serif;
+      width: 60%;
+      font-size: 1.5em;
+      margin: 0 auto; }
+      .team .about-team .text p {
+        margin-top: 0.6em;
+        line-height: 0.2em; }
+  .team .members {
+    height: 400px;
+    background-color: #02253E; }
+
 @media only screen and (max-width: 1070px) {
   #tour-packet {
     display: none; } }
@@ -136,10 +172,21 @@ div.player > img {
   .nav > li {
     position: relative;
     display: inline-block;
-    margin-bottom: -1em; } }
+    margin-bottom: -1em; }
+
+  #team .nav > li {
+    /* position: relative; */
+    /* display: inline-block; */
+    margin-bottom: 0em; } }
 @media only screen and (max-width: 500px) {
   .navbar-brand {
     display: inline; }
+
+  nav#team {
+    padding-left: 1em; }
+
+  nav#team .navbar-brand {
+    display: none; }
 
   .donate_button {
     font-size: 1em; }
