@@ -124,31 +124,24 @@ Social Icon Widgets
 }
  
 
-
-/*******************
-NAVIGATION
-*******************/
-
+/********/
 .blue {
-	background-color: rgba(2,37,62,0.9)!important; 
+	background-color: $monarch-blue !important;
 }
-
 .blue .nav-tabs>li.active>a{
 	color: white;
 }
 .blue .nav-tabs>li>a:hover{
-	background-color: rgba(190,145,0,0.9);
+	background-color: $monarch-gold;
 }
 
 .navbar {
-	background-color: rgba(190,145,0,0.8);
+	background-color: $monarch-gold;
 	font-family: $main-font;
 	width: 600px;
 	position: absolute;
 	right: 0;
-	z-index: 99999999;
-	width: 665px;
-	text-align: center;
+	width: 700px;
 }
 @media only screen and (max-width: 700px){
 	.navbar{
@@ -162,7 +155,7 @@ NAVIGATION
 .nav {
 	margin-top: 1em;
 	margin-right: 1em;
-	font-size: 1.3em;
+	font-size: 1.5em;
 }
 
 .navbar-default .navbar-nav>li>a {
@@ -171,25 +164,15 @@ NAVIGATION
 	border-radius: 4px;
 	margin-right: 0px;
 }
-.blue .navbar-default .navbar-nav>li>a{
-	color: white;
-}
 .navbar-default .navbar-nav>li.active>a {
-	color: $white;
+	color: $monarch-blue;
 	background-color: transparent;
 	border:1px solid transparent;
 }
 .nav-tabs>li>a:hover {
 	background-color: $monarch-blue;
 }
-.navbar-brand{
-position: absolute;
-  left: 0;
-   padding: 1px 1px; 
-  /* font-size: 18px; */
-  /* line-height: 20px; */
-  z-index: 99999999999;
-}
+
 .navbar-brand img {
 	background-color: white;
 	border-radius: 1em;
@@ -223,26 +206,12 @@ h2 {
 	li{
 		background-color: $monarch-blue;
 		a{
-			font-size: 1.2em;
+			font-size: 1.8em;
 			color: white;
-			text-shadow: 0px 2px 0px black;
 		}
 	}
 }
-.navbar-toggle{
-	background-color: $monarch-blue;
-}
 
-.navbar-default .navbar-toggle{
-	border:none;
-}
-.navbar-default .navbar-toggle .icon-bar{
-	background-color: $white;
-}
-.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus
-.navbar-default .navbar-toggle .icon-bar:hover{
-	background-color: $monarch-gold;
-}
 /**********************
 ABOUT US 
 ***********************/
@@ -414,13 +383,12 @@ Carousel Slide Show
 .carousel-inner>.item>a>img {
 	vertical-align: middle;
 	min-height: 300px;
-	width: 100%;
 }
 .img-responsive {
 	margin: 0 auto;
 }
 .carousel-inner {
-	max-height:650px;
+	max-height: 500px;
 }
 .carousel-control {
 	width: 5%;
@@ -457,25 +425,13 @@ Carousel Slide Show
 	background-color: rgba(2,37,62,0.4);
 }
 
-img.darius{
-	margin-top: -230px;
-}
-img.mone{
-	margin-top: -152px;
-}
-img.dance{
-	margin-top: -125px;
-}
-img.scott{
-	margin-top: -50px;
-}
 /***********************
 FOOTER
 ************************/
 #page_footer{
-	background: url("../images/silhouette.jpg");
+	background: url("../images/skyline.jpg");
 	background-repeat: no-repeat;
-	background-size: 100%;
+	background-size: 100% 100%;
 	background-position: center;
 }
 .bottom{
@@ -559,13 +515,6 @@ div.tweet {
 }
 .nav:first {
 	color: black;
-}
-.carousel-inner>.item>img,
-	.carousel-inner>.item>a>img {
-	vertical-align: middle;
-	height: auto;
-	width: 100%;
-	margin-top: 0;
 }
 
 }

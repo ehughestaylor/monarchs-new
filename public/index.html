@@ -32,13 +32,24 @@
 
 <body>
 <div class="se-pre-con"></div>
+
 	<!-- NAVIGATION -->
-	<nav class="navbar navbar-default navbar-static-top">
-	  <div class="container-fluid">
-	    <a class="navbar-brand" href="#">
-        	<img alt="Brand" src="images/logo.png" height="70px" width="70px">
-        </a>
-		<ul class="nav nav-tabs">
+<a class="navbar-brand" href="#"><img src="images/logo.png" alt=""></a>
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
 		  <li id="home_but" role="presentation" class="active"><a href="#">Home</a></li>
 		  <li id="teams_but" role="presentation"><a href="tour.html">Tour</a></li>
 		  <li role="presentation" class="dropdown">
@@ -55,43 +66,42 @@
 		  <li id="about_but" role="presentation"><a href="#">About</a></li>
 		  <li id="mission_but" role="presentation"><a href="#">Mission</a></li>
 		  <li id="contact_but" role="presentation"><a href="#">Contact</a></li>
-		</ul>
-	  </div>
-	</nav>
+		  <li id="contact_but" role="presentation"><a href="https://www.justgive.org/basket?acton=donate&ein=23-2593423">Donate</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
 
 	<!-- CAROUSEL START -->
 <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
 <!-- Indicators -->
 	<!-- Wrapper for slides -->
 	<div class="carousel-inner">
-		<div class="donate">
-			<a href="https://www.justgive.org/basket?acton=donate&ein=23-2593423">
-			<button class="donate_button">Donate</button>
-			</a>
-		</div>
 	<div class="item active">
-	  <img class="img-responsive" src="images/robinson.jpg" alt="...">
+	  <img class="img-responsive" src="images/robinson.jpg" alt="..." style="margin-top:-32px;">
 	  <div class="carousel-caption">
 	  	<a class="barnstorm" href="tour.html">Find out more about our barnstorming tour here!</a>
 	  </div>
 	</div>
 	<div class="item">
-	  <img class="img-responsive" src="images/mo_fence.jpg" alt="...">
+	  <img class="img-responsive mone" src="images/mo_fence.jpg" alt="..." >
 	  <div class="carousel-caption">
 	  </div>
 	</div>
 	<div class="item">
-	  <img class="img-responsive" src="images/scott.jpg" alt="...">
+	  <img class="img-responsive scott" src="images/scott.jpg" alt="...">
 	  <div class="carousel-caption">
 	  </div>
 	</div>
 	<div class="item">
-	  <img class="img-responsive" src="images/darius_bus.jpg" alt="...">
+	  <img class="img-responsive darius" src="images/darius_bus.jpg" alt="...">
 	  <div class="carousel-caption">
 	  </div>
 	</div>
 	<div class="item">
-	  <img class="img-responsive" src="images/dance.jpg" alt="...">
+	  <img class="img-responsive dance" src="images/dance.jpg" alt="...">
 	  <div class="carousel-caption">
 	  </div>
 	</div>
@@ -207,8 +217,7 @@
 	</div>
 </footer>
 </body>
-	<script src="js/jquery.min.js"></script>
-	<script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
-	<script src="js/bootstrap.min.js"></script>	
+ 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
 	<script src="js/main.js"></script>
 </html>

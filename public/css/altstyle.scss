@@ -11,6 +11,9 @@ NAVIGATION
 .navbar-default .navbar-nav>li>a{
 	color: white;
 }
+.nav {
+font-size: 1.3em;
+}
 .navbar-default .navbar-nav>li>a:hover{
 	color: $monarch-blue;
 }
@@ -20,8 +23,9 @@ NAVIGATION
 }
 
 .tour-nav{
-	height: 40px;
 	float: right;
+	margin-top: 0;
+	width: 100%;
 }
 .tour-nav>li>a{
 	display: inline;
@@ -48,6 +52,7 @@ li.current{
 	position: absolute;
 	left: 43%;
 }
+
 /*************
 TOUR PACKET
 **************/
@@ -217,29 +222,21 @@ TEAM PAGES
 }
 
 @media only screen and (max-width: 800px){
-	.nav>li {
-		position: relative;
-		display: inline-block;
-		margin-bottom: -1em;
-	}
 	#team .nav > li {
 	  /* position: relative; */
 	  /* display: inline-block; */
 	   margin-bottom: 0em; 
 	}
+	.navbar-brand {
+		display: none;
+	}
 }
 @media only screen and (max-width: 500px){
-	.navbar-brand {
-		display: inline;
-	}
 	nav#team{
 		padding-left: 1em;
 	}
 	nav#team .navbar-brand{
 		display: none;
-	}
-	.donate_button {
-		font-size: 1em;
 	}
 	.carousel-control {
 		font-size: 2.5em;

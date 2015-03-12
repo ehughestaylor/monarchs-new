@@ -107,27 +107,23 @@ Social Icon Widgets
   padding: 0;
   margin: 0; }
 
-/*******************
-NAVIGATION
-*******************/
+/********/
 .blue {
-  background-color: rgba(2, 37, 62, 0.9) !important; }
+  background-color: #02253E !important; }
 
 .blue .nav-tabs > li.active > a {
   color: white; }
 
 .blue .nav-tabs > li > a:hover {
-  background-color: rgba(190, 145, 0, 0.9); }
+  background-color: #BE9100; }
 
 .navbar {
-  background-color: rgba(190, 145, 0, 0.8);
+  background-color: #BE9100;
   font-family: "Oswald", sans-serif;
   width: 600px;
   position: absolute;
   right: 0;
-  z-index: 99999999;
-  width: 665px;
-  text-align: center; }
+  width: 700px; }
 
 @media only screen and (max-width: 700px) {
   .navbar {
@@ -139,7 +135,7 @@ NAVIGATION
 .nav {
   margin-top: 1em;
   margin-right: 1em;
-  font-size: 1.3em; }
+  font-size: 1.5em; }
 
 .navbar-default .navbar-nav > li > a {
   color: #F4F3F5;
@@ -147,24 +143,13 @@ NAVIGATION
   border-radius: 4px;
   margin-right: 0px; }
 
-.blue .navbar-default .navbar-nav > li > a {
-  color: white; }
-
 .navbar-default .navbar-nav > li.active > a {
-  color: #F4F3F5;
+  color: #02253E;
   background-color: transparent;
   border: 1px solid transparent; }
 
 .nav-tabs > li > a:hover {
   background-color: #02253E; }
-
-.navbar-brand {
-  position: absolute;
-  left: 0;
-  padding: 1px 1px;
-  /* font-size: 18px; */
-  /* line-height: 20px; */
-  z-index: 99999999999; }
 
 .navbar-brand img {
   background-color: white;
@@ -192,22 +177,8 @@ h2 {
   .dropdown-menu li {
     background-color: #02253E; }
     .dropdown-menu li a {
-      font-size: 1.2em;
-      color: white;
-      text-shadow: 0px 2px 0px black; }
-
-.navbar-toggle {
-  background-color: #02253E; }
-
-.navbar-default .navbar-toggle {
-  border: none; }
-
-.navbar-default .navbar-toggle .icon-bar {
-  background-color: #F4F3F5; }
-
-.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus
-.navbar-default .navbar-toggle .icon-bar:hover {
-  background-color: #BE9100; }
+      font-size: 1.8em;
+      color: white; }
 
 /**********************
 ABOUT US 
@@ -364,14 +335,13 @@ Carousel Slide Show
 .carousel-inner > .item > img,
 .carousel-inner > .item > a > img {
   vertical-align: middle;
-  min-height: 300px;
-  width: 100%; }
+  min-height: 300px; }
 
 .img-responsive {
   margin: 0 auto; }
 
 .carousel-inner {
-  max-height: 650px; }
+  max-height: 500px; }
 
 .carousel-control {
   width: 5%;
@@ -405,25 +375,13 @@ Carousel Slide Show
 .long {
   background-color: rgba(2, 37, 62, 0.4); }
 
-img.darius {
-  margin-top: -230px; }
-
-img.mone {
-  margin-top: -152px; }
-
-img.dance {
-  margin-top: -125px; }
-
-img.scott {
-  margin-top: -50px; }
-
 /***********************
 FOOTER
 ************************/
 #page_footer {
-  background: url("../images/silhouette.jpg");
+  background: url("../images/skyline.jpg");
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: 100% 100%;
   background-position: center; }
 
 .bottom {
@@ -498,14 +456,7 @@ div.tweet {
     margin-right: 0; }
 
   .nav:first {
-    color: black; }
-
-  .carousel-inner > .item > img,
-  .carousel-inner > .item > a > img {
-    vertical-align: middle;
-    height: auto;
-    width: 100%;
-    margin-top: 0; } }
+    color: black; } }
 @media only screen and (max-width: 500px) {
   .navbar-brand {
     display: none; }
@@ -526,4 +477,4 @@ html, body {
   width: auto !important;
   overflow-x: hidden !important; }
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=test.css.map */
