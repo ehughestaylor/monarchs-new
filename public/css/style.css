@@ -422,7 +422,7 @@ FOOTER
 #page_footer {
   background: url("../images/silhouette.jpg");
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: 100% 100%;
   background-position: center; }
 
 .bottom {
@@ -514,7 +514,8 @@ div.tweet {
 
   .nav > li > a {
     padding: 10px 7.0px;
-    margin-left: 11px; }
+    margin-left: 11px;
+    font-size: 2.4em; }
 
   .donate_button {
     font-size: 1em; }
