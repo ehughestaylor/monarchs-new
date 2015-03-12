@@ -160,33 +160,67 @@ div.player>img{
 /*****************
 TEAM PAGES
 ******************/
+.navbar-brand{
+	img{
+		height: 70px;
+		width: 70px;
+	}
+}
+nav#team{
+	width: 100%;
+}
+
 #team{
 	ul.nav{
 		bottom: 20px;
 		border-bottom: none;
 		right: 0;
-		font-size: 1.5em;
+		font-size: 1.2em;
+		li.active>a{
+			color: $monarch-blue;
+		}
+		li>a{
+			color: white;
+		}
+	}
+	ul.dropdown-menu{
+		li{
+			a{
+				color: $monarch-gold;
+			}
+		}
+	}
+	.nav-tabs>li>a:hover{
+		border:none;
+		cursor: pointer;
 	}
 	.navbar-brand{
-		padding-left: 1em;
-		padding-top: 1em;
 		background-color: white;
+		img{
+		height: 70px;
+		width: 70px;
+		}	
 	}
 }
 .navbar{
-	margin-bottom: 0px;
+	margin-bottom: 20px;
+}
+ul.nav li.dropdown:hover > ul.dropdown-menu {
+    display: block; 
+    cursor: pointer;   
 }
 
 .team{
 	width: 100%;
-	background-color: $white;
-	padding-top:1.3em;
+	background-color: $monarch-gold;
+	padding-top:2.3em;
 	
 	h1{
 	font-family: 'Oswald', sans-serif;
 	color: $monarch-blue;
 	text-align: center;
 	font-size: 2em;
+	margin-top: 1.2em;
 	padding-bottom: 0.4em;
 	}
 	.container{
@@ -194,26 +228,80 @@ TEAM PAGES
 	}
 	.about-team{
 		padding-top:2em;
-		background-color: $monarch-lighgold;
+		background-color: $white;
 		padding-bottom: 2em;
-		.text{
+		width: 100%;
+		margin: 0 auto;
+		
+		div.team-pic{
+			width: 48%;
+			float: left;
+			background-color: $monarch-lighgold;
+			height: 300px;
+		}
+		div.text{
 			font-family: $second-font;
-			width: 60%;
 			font-size: 1.5em;
-			margin: 0 auto;
+			width: 48%;
+			float: right;
 			p{
 				margin-top: 0.6em;
-				line-height: 0.2em;
+				line-height: 1.2em;
 
 			}
 		}
-	}
-	.members{
-		height: 400px;
-		background-color: $monarch-blue;
-	}
-
+		@media only screen and (max-width: 800px){
+			div.team-pic{
+				width: 80%;
+				float: none;
+				margin:0 auto;
+			}
+			div.text{
+				width: 80%;
+				float: none;
+				margin: 0 auto;
+			}
 }
+	}
+		.members{
+			height: 400px;
+			background-color: $monarch-blue;
+				div.coaches{
+					height: 400px;
+					width: 30%;
+					float: left;
+					background-color: $monarch-gold;
+					h2{
+						text-align: center;
+					}
+				}
+				div.kids{
+					height: 400px;
+					width: 70%;
+					float: right;
+					background-color: $monarch-blue;
+					h2{
+						text-align: center;
+					}
+				}
+			@media only screen and (max-width: 800px){
+				div.coaches{
+					width: 100%;
+					float: none;
+					margin:0 auto;
+				}
+				div.kids{
+					width: 100%;
+					float: none;
+					margin: 0 auto;
+				}
+			}
+	}
+/*end of team styles*/
+}
+
+
+
 
 @media only screen and (max-width: 1070px){
 	#tour-packet{

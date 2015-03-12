@@ -128,46 +128,108 @@ div.player > img {
 /*****************
 TEAM PAGES
 ******************/
+.navbar-brand img {
+  height: 70px;
+  width: 70px; }
+
+nav#team {
+  width: 100%; }
+
 #team ul.nav {
   bottom: 20px;
   border-bottom: none;
   right: 0;
-  font-size: 1.5em; }
+  font-size: 1.2em; }
+  #team ul.nav li.active > a {
+    color: #02253E; }
+  #team ul.nav li > a {
+    color: white; }
+#team ul.dropdown-menu li a {
+  color: #BE9100; }
+#team .nav-tabs > li > a:hover {
+  border: none;
+  cursor: pointer; }
 #team .navbar-brand {
-  padding-left: 1em;
-  padding-top: 1em;
   background-color: white; }
+  #team .navbar-brand img {
+    height: 70px;
+    width: 70px; }
 
 .navbar {
-  margin-bottom: 0px; }
+  margin-bottom: 20px; }
+
+ul.nav li.dropdown:hover > ul.dropdown-menu {
+  display: block;
+  cursor: pointer; }
 
 .team {
   width: 100%;
-  background-color: #F4F3F5;
-  padding-top: 1.3em; }
+  background-color: #BE9100;
+  padding-top: 2.3em;
+  /*end of team styles*/ }
   .team h1 {
     font-family: 'Oswald', sans-serif;
     color: #02253E;
     text-align: center;
     font-size: 2em;
+    margin-top: 1.2em;
     padding-bottom: 0.4em; }
   .team .container {
     width: 100%; }
   .team .about-team {
     padding-top: 2em;
-    background-color: #C0A101;
-    padding-bottom: 2em; }
-    .team .about-team .text {
+    background-color: #F4F3F5;
+    padding-bottom: 2em;
+    width: 100%;
+    margin: 0 auto; }
+    .team .about-team div.team-pic {
+      width: 48%;
+      float: left;
+      background-color: #C0A101;
+      height: 300px; }
+    .team .about-team div.text {
       font-family: "Vollkorn", serif;
-      width: 60%;
       font-size: 1.5em;
-      margin: 0 auto; }
-      .team .about-team .text p {
+      width: 48%;
+      float: right; }
+      .team .about-team div.text p {
         margin-top: 0.6em;
-        line-height: 0.2em; }
+        line-height: 1.2em; }
+    @media only screen and (max-width: 800px) {
+      .team .about-team div.team-pic {
+        width: 80%;
+        float: none;
+        margin: 0 auto; }
+      .team .about-team div.text {
+        width: 80%;
+        float: none;
+        margin: 0 auto; } }
   .team .members {
     height: 400px;
     background-color: #02253E; }
+    .team .members div.coaches {
+      height: 400px;
+      width: 30%;
+      float: left;
+      background-color: #BE9100; }
+      .team .members div.coaches h2 {
+        text-align: center; }
+    .team .members div.kids {
+      height: 400px;
+      width: 70%;
+      float: right;
+      background-color: #02253E; }
+      .team .members div.kids h2 {
+        text-align: center; }
+    @media only screen and (max-width: 800px) {
+      .team .members div.coaches {
+        width: 100%;
+        float: none;
+        margin: 0 auto; }
+      .team .members div.kids {
+        width: 100%;
+        float: none;
+        margin: 0 auto; } }
 
 @media only screen and (max-width: 1070px) {
   #tour-packet {
