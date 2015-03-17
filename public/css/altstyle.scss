@@ -264,25 +264,79 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
 }
 	}
 		.members{
-			height: 400px;
+			height: auto;
 			background-color: $monarch-blue;
 				div.coaches{
-					height: 400px;
+					height: auto;
 					width: 30%;
 					float: left;
 					background-color: $monarch-gold;
 					h2{
 						text-align: center;
+						font-size: 2.0em;
+						margin: 1em 0;
+						color: white;
 					}
+					.flex-coaches{
+						display: inline-flex;
+					}
+				 div.flex-coaches{
+						display: inline-flex;
+						flex-direction: row;
+						flex-wrap:wrap;
+						justify-content:center;
+						align-items:center;
+						width: 100%;
+						margin-bottom: 1em;
+						overflow: scroll;					
+				 }
+				 div.flex-coaches > .item {
+				 	height: 180px;
+				 	widows: 180px;
+				 	margin: 0.3em;
+				 	background-color: pink;
+				 	vertical-align: middle;
+				 }
+				 div.flex-coaches > .item img{
+				 	height: 180px;
+				 	width: 180px;
+				 }
+
 				}
 				div.kids{
-					height: 400px;
+					height: auto;
 					width: 70%;
 					float: right;
 					background-color: $monarch-blue;
 					h2{
 						text-align: center;
+						font-size: 2.0em;
+						margin:1em 0;
+						color: white;
 					}
+					.flex-players{
+						display: inline-flex;
+						flex-direction: row;
+						flex-wrap:wrap;
+						justify-content:center;
+						align-items:center;
+						width: 100%;
+						margin-bottom: 1em;
+						overflow: scroll;
+					}
+					.flex-players > .item{
+						height: 180px;
+						width: 180px;
+						margin: 0.3em;
+						vertical-align: middle;
+						background-color: yellow;
+					}
+					.flex-players > .item >img{
+						height: 180px;
+						width: 180px;
+						padding-bottom: 0;
+					}
+
 				}
 			@media only screen and (max-width: 800px){
 				div.coaches{

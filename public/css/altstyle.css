@@ -205,22 +205,67 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
         float: none;
         margin: 0 auto; } }
   .team .members {
-    height: 400px;
+    height: auto;
     background-color: #02253E; }
     .team .members div.coaches {
-      height: 400px;
+      height: auto;
       width: 30%;
       float: left;
       background-color: #BE9100; }
       .team .members div.coaches h2 {
-        text-align: center; }
+        text-align: center;
+        font-size: 2.0em;
+        margin: 1em 0;
+        color: white; }
+      .team .members div.coaches .flex-coaches {
+        display: inline-flex; }
+      .team .members div.coaches div.flex-coaches {
+        display: inline-flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin-bottom: 1em;
+        overflow: scroll; }
+      .team .members div.coaches div.flex-coaches > .item {
+        height: 180px;
+        widows: 180px;
+        margin: 0.3em;
+        background-color: pink;
+        vertical-align: middle; }
+      .team .members div.coaches div.flex-coaches > .item img {
+        height: 180px;
+        width: 180px; }
     .team .members div.kids {
-      height: 400px;
+      height: auto;
       width: 70%;
       float: right;
       background-color: #02253E; }
       .team .members div.kids h2 {
-        text-align: center; }
+        text-align: center;
+        font-size: 2.0em;
+        margin: 1em 0;
+        color: white; }
+      .team .members div.kids .flex-players {
+        display: inline-flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin-bottom: 1em;
+        overflow: scroll; }
+      .team .members div.kids .flex-players > .item {
+        height: 180px;
+        width: 180px;
+        margin: 0.3em;
+        vertical-align: middle;
+        background-color: yellow; }
+      .team .members div.kids .flex-players > .item > img {
+        height: 180px;
+        width: 180px;
+        padding-bottom: 0; }
     @media only screen and (max-width: 800px) {
       .team .members div.coaches {
         width: 100%;

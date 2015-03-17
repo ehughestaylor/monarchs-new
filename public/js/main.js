@@ -4,13 +4,7 @@ function carousel(){
     })
    };
 
-$('.donate_button').on('mouseenter', function(){
-	var animationName = "animated tada";
-	var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
-	$(this).addClass(animationName).one(animationEnd, function(){
-		$(this).removeClass(animationName);
-	});
-})
+
 
 $("#about_but").click(function() {
     $('html, body').animate({
